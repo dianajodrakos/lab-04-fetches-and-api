@@ -12,6 +12,10 @@ body {
   font-family: 'DM Mono', monospace;
 }
 
+.nav a {
+  margin: var(--pad);
+}
+
 .App {
   display: flex;
   flex-direction: column;
@@ -99,7 +103,6 @@ h1 {
   text-transform: uppercase;
   font-size: .7rem;
   font-weight: 550;
-  border:
 }
 
 .card p {
@@ -128,8 +131,10 @@ button {
   cursor: pointer;
 }
 
-/* button:active {
-} */
+.card:hover {
+  border: 5px solid var(--color3);
+}
 
-/* button:hover {
-} */
+.card:active {
+  border: 5px solid red;
+}
