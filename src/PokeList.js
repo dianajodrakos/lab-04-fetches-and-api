@@ -8,7 +8,7 @@ export default class PokeList extends Component {
         return (
             <div className="list">
                 { this.props.data.map((pokemon) => 
-                <Link to={`/pokemon/${pokemon._id}`} >
+                <Link to={`/pokemon/${pokemon._id}`} key={pokemon.id} >
                     <PokeItem data={pokemon} key={pokemon.id} />
                 </Link>
             )}
