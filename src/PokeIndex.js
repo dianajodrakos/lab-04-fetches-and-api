@@ -62,9 +62,7 @@ export default class PokeIndex extends Component {
     return (
       <div>
         <PokeSearch handleClick={this.handleClick} handleQueryChange={this.handleQueryChange} handleQueryCatChange={this.handleQueryCatChange} handleSortChange={this.handleSortChange} handleSortCatChange={this.handleSortCatChange}/>
-
-        { this.state.loading && <img src="./loadingpokedex.gif" alt="loading"/> }
-        {/* display loading image until pokedex is ready to load */}
+        { this.state.loading && <img src="./loadingpokedex.gif" alt="loading" /> }
         <PokeList data={this.state.pokedex} />
       </div>
     );
